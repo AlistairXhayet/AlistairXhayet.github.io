@@ -1,0 +1,18 @@
+.endingGroup{
+    margin-bottom: -2vw;
+    padding: 5vw 5vw 2vw 5vw;
+    background-image: radial-gradient(red, black, black);
+    background-size: 300% 300%;
+    animation: AnimationName2 30s ease infinite;
+    font-size: 12px;
+    text-align: right;
+    vertical-align: center;
+    color: white;
+    /* border: 3px solid green; */
+}
+
+@keyframes AnimationName2 {
+    0%{background-position:100% 20%}
+    50%{background-position:0% 20%}
+    100%{background-position:100% 20%}
+}
