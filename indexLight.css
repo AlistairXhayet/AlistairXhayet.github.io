@@ -28,9 +28,15 @@
     height: 18vw;
     width: 18vw;
     border-radius: 50%;
-    box-shadow: 0px 0px 2vw grey;
+    animation: flowImageCyanToGrey 3s ease forwards;
     margin-bottom: 2vw;
     /* border: 3px solid blue */
+}
+
+@keyframes flowImageCyanToGrey {
+    0%{box-shadow: 0px 0px 4vw cyan}
+    50%{box-shadow: 0px 0px 4vw lineargradient(cyan, grey)}
+    100%{box-shadow: 0px 0px 2vw grey}
 }
 
 .names{
@@ -48,7 +54,13 @@
 }
 
 .circular-images:hover{
-    box-shadow: 0px 0px 2vw cyan;
+    animation: flowImageGreyToCyan 1.5s ease forwards;
+}
+
+@keyframes flowImageGreyToCyan {
+    0%{box-shadow: 0px 0px 2vw grey}
+    50%{box-shadow: 0px 0px 4vw lineargradient(grey, cyan)}
+    100%{box-shadow: 0px 0px 4vw cyan}
 }
 
 .names:hover{

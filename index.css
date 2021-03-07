@@ -28,9 +28,15 @@
     height: 18vw;
     width: 18vw;
     border-radius: 50%;
-    box-shadow: 0px 0px 2vw white;
+    animation: flowImageRedToWhite 3s ease forwards;
     margin-bottom: 2vw;
     /* border: 3px solid blue */
+}
+
+@keyframes flowImageRedToWhite {
+    0%{box-shadow: 0px 0px 4vw red}
+    50%{box-shadow: 0px 0px 4vw lineargradient(red, white)}
+    100%{box-shadow: 0px 0px 2vw white}
 }
 
 .names{
@@ -48,7 +54,13 @@
 }
 
 .circular-images:hover{
-    box-shadow: 0px 0px 2vw red;
+    animation: flowImageWhiteToRed 1.5s ease forwards;
+}
+
+@keyframes flowImageWhiteToRed {
+    0%{box-shadow: 0px 0px 2vw white}
+    50%{box-shadow: 0px 0px 4vw lineargradient(white, red)}
+    100%{box-shadow: 0px 0px 4vw red}
 }
 
 .names:hover{

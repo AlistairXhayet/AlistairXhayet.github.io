@@ -32,7 +32,7 @@
     border-radius: 50%;
     height: 6vw;
     margin: 1.5vw;
-    box-shadow: 0px 0px 2vw grey;
+    /* box-shadow: 0px 0px 2vw white; */
 }
 
 #map{
@@ -41,14 +41,14 @@
     flex: 1 1 auto;
 }
 
-.imgGreen:hover{
+.imgGreen{
     box-shadow: 0px 0px 2vw lightgreen;
 }
 
-.imgBlue:hover{
+.imgBlue{
     box-shadow: 0px 0px 2vw #0094FF;
 }
 
-.imgRed:hover{
+.imgRed{
     box-shadow: 0px 0px 2vw orangered;
 }
