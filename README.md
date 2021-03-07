@@ -1,1 +1,1 @@
-# AlistairXhayet.github.io/XhayetWebsite for the website
+# AlistairXhayet.github.io
