@@ -1,0 +1,100 @@
+.body{
+    margin:0;
+    background-color: #FFFFFF;
+}
+
+.allTogether{
+    margin: 2vw;
+    margin-bottom: 15vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 3px solid green; */
+}
+
+.allTogetherIndividually{
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+}
+
+.parent, .child, .pet{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3vw;
+}
+
+.circular-images{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2vw grey;
+    margin-bottom: 2vw;
+    /* border: 3px solid blue */
+}
+
+.names{
+    font-family: Arial;
+    font-size: 1.5vw;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    /* border: 3px solid red; */
+}
+
+.allTogetherIndividually:hover{
+    letter-spacing: 0.1vw;
+    /* border: 3px solid orange; */
+}
+
+.circular-images:hover{
+    box-shadow: 0px 0px 2vw cyan;
+}
+
+.names:hover{
+    color: cyan;
+}
+
+.personInfo{
+    padding: 7.5vw 5vw;
+    display: flex;
+    color: black;
+    /* border: 3px solid pink; */
+}
+
+.imageInfo{
+    object-fit: contain;
+    align-self: flex-start;
+    /* border: 3px solid yellow; */
+}
+
+.textInfo{
+    flex: 1 1 auto;
+    text-align: justify;
+    margin-left: 5vw;
+    opacity: 0;
+    /* border: 3px solid purple; */
+}
+
+.appearTextInfo{
+    flex: 1 1 auto;
+    text-align: justify;
+    margin-left: 5vw;
+    transform: translateY(50vw);
+    animation: fadeEffect 5s, come-in 3s ease forwards;
+    /* border: 3px solid purple; */
+}
+
+@keyframes fadeEffect { /*from 0 to full opacity*/
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+#susanaImageInfo, #stephaneImageInfo, #alistairImageInfo, #inesImageInfo, #jeremyImageInfo, #leoImageInfo{
+    position: sticky;
+    top: 10vw;
+}

@@ -1,0 +1,91 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="XhayetWebsiteAboutLight.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="XhayetWebsiteNavBarLight.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="XhayetWebsiteEndingLight.css" media="screen"/>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Xhayet Family About</title>
+    <script>
+      $(function(){$("#includedEnding").load("XhayetWebsiteEndingLight.html"); });
+    </script>
+  </head>
+  <body class="body">
+
+    <!-- Scroll Bar -->
+    <div id="scrollbar">
+      <div id="bar"></div>
+    </div>
+
+          <!-- Navigation Bar -->
+  <div class="topnav">
+    <img src="Images/XhayetFamilyLogo.png" alt="Error" id="xhayetFamilyLogo">
+    <p1 id="Navfamily" class="largeWindow">Xhayet Family</p1>
+    <div class="btn-group btn-group-lg buttons">
+        <button onclick="window.location.href='/indexLight.html'" type="button" class="btn btn-outline-info">Home</button>
+        <button onclick="window.location.href='/XhayetWebsiteAboutLight.html'" type="button" class="btn btn-outline-info active" >About</button>
+        <button onclick="window.location.href='/XhayetWebsiteContactLight.html'" type="button" class="btn btn-outline-info">Contact</button>
+        <button onclick="window.location.href='/XhayetWebsiteContact.html'" type="button" class="btn btn-outline-info">Dark</button>
+    </div>
+  </div>
+  <div class="blur"></div>
+
+  <img src="Images/LightSaberHandle.png" alt="LightSaberHandle" id="lightsaberHandle">
+  <div id="scrollbar">
+    <div id="bar"></div>
+  </div>
+
+  <div id="bornLocation">
+    <h2>Where We Were Born</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lorem nibh, fringilla dapibus tristique fermentum, dapibus nec felis. Maecenas sem dui, porta sit amet semper eu, dictum quis ligula. Aenean accumsan pellentesque leo sit amet vestibulum. Vestibulum a dignissim turpis, at dignissim mi. Aliquam sodales molestie mauris id vestibulum. Praesent cursus semper orci ac eleifend. Aliquam ornare viverra fermentum. Nullam nibh velit, convallis et pretium et, sollicitudin in est. Ut eget nunc eu neque suscipit imperdiet. Quisque id ante egestas sem convallis rhoncus vel sit amet nunc.
+
+      Nulla facilisi. Vestibulum blandit bibendum enim, tempor vestibulum ex venenatis et. Phasellus vitae quam accumsan, mattis justo eu, ornare tellus. Mauris cursus ac nisl sed accumsan. Donec semper odio eget risus elementum consectetur. Proin nibh erat, ultricies eget finibus non, sodales sit amet urna. Vestibulum venenatis tincidunt maximus. Sed feugiat diam quis est pellentesque, eu tristique nulla mollis. Proin et consectetur tellus. Duis dignissim porttitor orci, et consequat risus finibus ullamcorper. Etiam pharetra, erat at porttitor pellentesque, augue tellus tristique mauris, eu dapibus turpis dolor hendrerit ipsum. Sed at tincidunt mi. Donec id congue dolor.
+      
+      Nam ac lobortis nisl. Integer eget rhoncus lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget justo massa. Nulla facilisis accumsan enim ac consequat. Duis eget purus eleifend, tincidunt dolor non, cursus arcu. Pellentesque ac risus vel justo eleifend molestie id ut dolor. Aliquam congue diam eu consequat ornare. Maecenas metus lorem, dapibus consectetur augue eget, sodales pellentesque lacus.
+      
+      Sed ac volutpat nisl, nec blandit libero. Nunc sit amet tempus nulla. Etiam et bibendum augue. Vivamus tellus erat, malesuada vitae viverra rutrum, posuere at eros. Nunc ultricies lorem vehicula consequat luctus. Vivamus nibh felis, mollis vel scelerisque eu, ultrices in erat. Mauris augue velit, laoreet quis odio sed, placerat fringilla augue. Phasellus purus lectus, tempor at diam vitae, aliquet sagittis est. Phasellus commodo auctor mi, ut viverra risus sollicitudin sed. Nunc ac velit quis lacus feugiat finibus. Cras maximus pellentesque lorem ac tristique. Integer eu lorem ultricies, auctor purus et, auctor purus. Etiam egestas ultricies ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque elit dui, blandit ac eros vitae, finibus rhoncus nulla. Fusce convallis sagittis magna id iaculis.
+      
+      </p>
+    </p>
+  </div>
+
+  <!--The div element for the map -->
+  <div id="allMap">
+    <div id="mapSideImages">
+      <img src="Images/XhayetWebsiteSusana.jpg" alt="Susana" class="imgGreen smallRound">
+      <img src="Images/XhayetWebsiteStephane.jpg" alt="Stephane" class="imgBlue smallRound">
+      <img src="Images/XhayetWebsiteAlistair.jpg" alt="Alistair" class="imgRed smallRound">
+      <img src="Images/XhayetWebsiteInes.jpg" alt="In&egraves" class="imgRed smallRound">
+     <img src="Images/XhayetWebsiteJeremy.jpg" alt="Jeremy" class="imgRed smallRound">
+    </div>
+    <div id="map"></div>
+  </div>
+
+  <div id="includedEnding"></div>
+
+  </body>
+  <!-- Scroll Bar -->
+  <script src="index.js">
+  </script>
+
+  <script>
+    // Initialize and add the map
+    function initMap() {
+    // The location of cities
+      const paris = { lat: 48.8566, lng: 2.3522 };
+      const london = { lat: 51.5074, lng: -0.1278 };
+      const malaga = { lat: 36.7212, lng: -4.4217 };
+      const liege = { lat: 50.6326, lng: 5.5797 };
+      // The map, centered at Paris
+      const map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: paris,});
+        // The marker, positioned at cities
+      const londonMarker = new google.maps.Marker({position: london,map: map, icon:"Images/redMarker.png"});
+      const malagaMarker = new google.maps.Marker({position: malaga,map: map, icon:"Images/greenMarker.png"});
+      const liegeMarker = new google.maps.Marker({position: liege,map: map, icon:"Images/blueMarker.png"});
+    }
+  </script>
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=APIKEY&callback=initMap&libraries=&v=weekly" async></script>
+  <!-- APIKEY: AIzaSyBRBXzN3Y2RENWpy0KwESF-sQUtJD3-KoM -->
+</html>

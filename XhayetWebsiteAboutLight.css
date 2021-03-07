@@ -1,0 +1,54 @@
+.body{
+    margin: 0;
+    background-color: white;
+}
+
+#bornLocation{
+    text-align: justify;
+    margin: 2vw 5vw;
+    color: black;
+    /* border:3px solid pink; */
+}
+
+#allMap{
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    align-self: flex-start;
+    margin: 1vw 5vw;
+    /* border: 3px solid yellow; */
+}
+
+#mapSideImages{
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    align-self: flex-start;
+    width: 9vw;
+    /* border: 3px solid yellow; */
+}
+
+.smallRound{
+    border-radius: 50%;
+    height: 6vw;
+    margin: 1.5vw;
+    box-shadow: 0px 0px 2vw grey;
+}
+
+#map{
+    height: 35vw;
+    margin: 5vw 0 5vw 2vw;
+    flex: 1 1 auto;
+}
+
+.imgGreen:hover{
+    box-shadow: 0px 0px 2vw lightgreen;
+}
+
+.imgBlue:hover{
+    box-shadow: 0px 0px 2vw #0094FF;
+}
+
+.imgRed:hover{
+    box-shadow: 0px 0px 2vw orangered;
+}
