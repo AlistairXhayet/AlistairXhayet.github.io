@@ -16,3 +16,8 @@
     50%{background-position:0% 20%}
     100%{background-position:100% 20%}
 }
+
+.bottomSmall{
+    filter: brightness(150%);
+    height: 3vw;
+}
